@@ -1,0 +1,221 @@
+/* C and C CSS */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    text-transform: uppercase;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+body{
+	font-size:0.8em;
+	text-align:center;
+	background-color:#959595;
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+	margin:0px;
+	padding:0px;
+}
+img{
+	border:0px;
+}
+#mainContainer{
+	width:80%;
+	height:300px;
+	margin:0 auto;
+	text-align:left;
+    background-image:url('http://coastandcanyonwildlife.org/img/header001.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#leftContainer{
+	width:275px;
+	float:left;
+	
+	padding-top:12px;
+	padding-left:20px;
+	padding-right:5px;
+	height:200px;
+}
+
+#rightContainer{
+	width:300
+px;
+	float:right;
+	
+	padding-top:12px;
+	padding-left:0px;
+	padding-right:5px;
+	height:200px;
+
+}
+
+#contentContainer{
+	width:720px;
+	color:#FFF;
+}
+.ad{
+	clear:both;
+	text-align:center;
+	padding:5px;
+}
+
+/* END DEMO CSS */
+#dhtmlgoodies_menu{
+	font-family:arial;	/* Font for main menu items */
+	width:200px;	/* Width of main menu */
+
+}
+#dhtmlgoodies_menu	li{	/* Main menu <li> */
+	list-style-type:none;	/* No bullets */
+	margin:px;	/* No margin - needed for Opera */
+}
+#dhtmlgoodies_menu ul{
+	margin:0px;	/* No <ul> air */
+	padding:0px;	/* No <ul> air */
+}
+#dhtmlgoodies_menu ul li ul{	/* Styling for those who doesn't have javascript enabled */
+	padding-left:10px;
+}
+#dhtmlgoodies_menu	li a{	/* Main menu links */
+	text-decoration:none;	/* No underline */
+	color:#000;	/* Black text color */
+
+	height:20px;	/* 20 pixel height */
+	line-height:20px;	/* 20 pixel height */
+	vertical-align:middle;	/* Align text in the middle */
+	border:2px solid #000;	/* Black border */
+	background-color:#fff;
+	margin:8px;	/* A little bit of air */
+	padding:3px;	/* Air between border and text inside */
+
+	display:block;
+}
+#dhtmlgoodies_menu	li a:hover,#dhtmlgoodies_menu .activeMainMenuItem{
+	color:#FFF;
+	background-color:#8b516c;
+}
+.dhtmlgoodies_subMenu{
+	visibility:hidden;
+	position:absolute;
+	overflow:hidden;
+	border:2px solid #000;
+	background-color:#fff;
+	font-family:arial;
+	text-align:left;
+
+}
+.dhtmlgoodies_subMenu ul{
+	margin:0px;
+	padding:0px;
+}
+.dhtmlgoodies_subMenu ul li{
+	list-style-type:none;
+	margin:0px;
+	padding:2px;	/* 1px of air between submenu border and sub menu item - (the "white" space you see on mouse over )*/
+}
+.dhtmlgoodies_subMenu ul li a{	/* Sub menu items */
+	white-space:nowrap;	/* No line break */
+	text-decoration:none;	/* No underline */
+	color:#000;	/* Black text color */
+
+	height:16px;	/* 16 pixels height */
+	line-height:16px;	/* 16 pixels height */
+	padding:3px;	/* 1px of "air" inside */
+
+	display:block;	/* Display as block - you shouldn't change this */
+}
+.dhtmlgoodies_subMenu ul li a:hover{	/* Sub menu items - mouse over effects */
+	color:#FFF;	/* White text */
+	background-color:#8b516c;	/* Blue background */
+}
+
+#content {
+	width:80%;
+	margin:0 auto;
+	text-align:left;
+	background-image:url('http://coastandcanyonwildlife.org/img/backgroundmid001.jpg'); margin-top:-13px;
+
+}
+
+#main {
+	width:80%;
+	padding-top:50px;
+	padding-bottom:40px;
+	padding-right:40px;
+	padding-left:50px;
+	text-align:left;
+
+}
+
+#streaming {
+	width:880px;
+	margin-left:-20px;
+      
+	
+
+}
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .three-column {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+    } 
+    .body-text {
+        width: 85%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .three-column {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    } 
+    .two-column {
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;   
+    }
+    .body-text {
+        width: 95%;
+    }
+    .home-page-image {
+        width: 95%;
+    
+    }
+}
+@media screen and (min-width: 1400px) {
+    .three-column {
+        -webkit-column-count: 4; /* Chrome, Safari, Opera */
+        -moz-column-count: 4; /* Firefox */
+        column-count: 4;
+    } 
+} 
